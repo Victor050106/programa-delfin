@@ -1,6 +1,6 @@
 # Archivos locales de desarrollo
 cloudflared.exe
-compartir.bat
+*.bat
 *.zip
 
 # Sistema
