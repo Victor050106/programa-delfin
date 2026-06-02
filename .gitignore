@@ -1,0 +1,9 @@
+# Archivos locales de desarrollo
+cloudflared.exe
+compartir.bat
+*.zip
+
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
