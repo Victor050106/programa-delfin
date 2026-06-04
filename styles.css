@@ -1173,120 +1173,164 @@ section {
 .form-modal-card {
     background: var(--paper);
     border-radius: var(--radius-lg);
-    max-width: 460px;
+    max-width: 440px;
     width: 100%;
-    padding: 40px 36px;
     position: relative;
     box-shadow: var(--shadow-lg);
-    transform: translateY(20px);
+    transform: translateY(20px) scale(0.98);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
 }
 
 .form-modal.active .form-modal-card {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
 }
 
 .form-modal-close {
     position: absolute;
     top: 16px;
     right: 16px;
-    width: 36px;
-    height: 36px;
-    background: transparent;
-    border: 1px solid var(--gray-200);
+    width: 34px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: var(--gray-700);
+    color: var(--white);
     transition: var(--transition);
+    z-index: 2;
 }
 
 .form-modal-close:hover {
-    background: var(--uni-red);
-    border-color: var(--uni-red);
-    color: var(--white);
+    background: rgba(255, 255, 255, 0.95);
+    border-color: transparent;
+    color: var(--uni-red-dark);
+    transform: rotate(90deg);
 }
 
-.form-modal-close svg {
-    width: 18px;
-    height: 18px;
+/* Encabezado con banda institucional */
+.form-modal-header {
+    background:
+        radial-gradient(ellipse at 80% 0%, rgba(200, 150, 31, 0.25), transparent 60%),
+        linear-gradient(150deg, var(--uni-red) 0%, var(--uni-red-dark) 70%, var(--uni-red-deep) 100%);
+    color: var(--white);
+    padding: 32px 36px 28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-modal-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--uni-gold-light), var(--uni-gold));
+}
+
+.form-modal-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 14px;
+    color: var(--uni-gold-light);
+    margin-bottom: 18px;
 }
 
 .form-modal-tag {
-    display: inline-block;
-    font-size: 0.72rem;
+    display: block;
+    font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--uni-red);
-    margin-bottom: 16px;
+    color: var(--uni-gold-light);
+    margin-bottom: 8px;
 }
 
 .form-modal-title {
     font-family: var(--font-display);
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 12px;
+    color: var(--white);
     line-height: 1.2;
     letter-spacing: -0.01em;
+}
+
+.form-modal-content {
+    padding: 26px 36px 34px;
 }
 
 .form-modal-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
-    margin-bottom: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--gray-200);
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.form-modal-meta:empty {
+    display: none;
 }
 
 .form-modal-meta span {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
+    gap: 7px;
+    font-size: 0.82rem;
+    font-weight: 500;
     color: var(--gray-700);
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    padding: 7px 13px;
+    border-radius: 50px;
 }
 
 .form-modal-meta svg {
-    width: 16px;
-    height: 16px;
     color: var(--uni-gold);
+    flex-shrink: 0;
 }
 
 .form-modal-body {
     color: var(--gray-700);
-    font-size: 0.95rem;
-    line-height: 1.65;
-    margin-bottom: 28px;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 26px;
 }
 
 .form-modal-actions {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
 }
 
 .form-modal-actions .btn {
     width: 100%;
+    gap: 8px;
 }
 
 .btn-ghost {
     background: transparent;
-    color: var(--gray-700);
+    color: var(--gray-500);
     border: none;
     padding: 12px 24px;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     font-family: var(--font-body);
+    border-radius: 6px;
+    transition: var(--transition);
 }
 
 .btn-ghost:hover {
     color: var(--uni-red);
+    background: var(--uni-red-soft);
 }
 
 /* ===== Congreso ===== */
