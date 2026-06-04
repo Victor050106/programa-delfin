@@ -1333,6 +1333,106 @@ section {
     background: var(--uni-red-soft);
 }
 
+/* ===== Sedes ===== */
+.sedes {
+    max-width: 920px;
+    margin: 72px auto 0;
+    padding-top: 56px;
+    border-top: 1px solid var(--gray-200);
+}
+
+.sedes-title {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+.sedes-subtitle {
+    text-align: center;
+    color: var(--gray-700);
+    font-size: 0.98rem;
+    margin: 10px auto 32px;
+    max-width: 560px;
+}
+
+.sedes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.sede-card {
+    display: flex;
+    gap: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    padding: 28px 28px;
+    transition: var(--transition);
+}
+
+.sede-card:hover {
+    border-color: var(--uni-gold);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.sede-icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--uni-red-soft);
+    color: var(--uni-red);
+    border-radius: 12px;
+}
+
+.sede-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--uni-red);
+    margin-bottom: 4px;
+}
+
+.sede-info h4 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 8px;
+}
+
+.sede-info p {
+    color: var(--gray-700);
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin-bottom: 14px;
+}
+
+.sede-map {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--uni-red);
+    letter-spacing: 0.02em;
+    transition: var(--transition);
+}
+
+.sede-map:hover {
+    gap: 10px;
+    color: var(--uni-red-dark);
+}
+
 /* ===== Congreso ===== */
 .congreso {
     background:
@@ -1509,10 +1609,53 @@ section {
 
 .lugar-1 { background: linear-gradient(135deg, #C8102E, #5E0612); }
 .lugar-2 { background: linear-gradient(135deg, #14110F, #4a0a13); }
-.lugar-3 { background: linear-gradient(135deg, #C8961F, #8B0A1E); }
+.lugar-3 { background: linear-gradient(135deg, #1f7a8b, #103a4a); }
 .lugar-4 { background: linear-gradient(135deg, #1f5d8b, #14110F); }
 .lugar-5 { background: linear-gradient(135deg, #C8961F, #6e520f); }
 .lugar-6 { background: linear-gradient(135deg, #C8102E, #14110F); }
+.lugar-7 { background: linear-gradient(135deg, #d4762a, #7a2e0f); }
+.lugar-8 { background: linear-gradient(135deg, #14a0a8, #0a5a6e); }
+.lugar-9 { background: linear-gradient(135deg, #2e8b57, #0f3a2a); }
+.lugar-10 { background: linear-gradient(135deg, #6b8e23, #2f4010); }
+.lugar-11 { background: linear-gradient(135deg, #c87f1f, #5e3a06); }
+
+/* Grupos dentro de la sección de lugares */
+.lugares-group {
+    margin: 0 0 28px;
+}
+
+.lugares-group-rec {
+    margin-top: 56px;
+}
+
+.lugares-group-title {
+    font-family: var(--font-display);
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.lugares-group-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--gray-300);
+}
+
+.lugares-group-rec .lugares-group-title {
+    color: var(--uni-red-dark);
+}
+
+.lugares-group-note {
+    color: var(--gray-700);
+    font-size: 0.95rem;
+    margin-top: 8px;
+    max-width: 640px;
+}
 
 .lugar-image::before {
     content: '';
@@ -1744,6 +1887,14 @@ section {
 @media (max-width: 768px) {
     section {
         padding: 80px 0;
+    }
+
+    .sedes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lugares-group-title {
+        font-size: 1.4rem;
     }
 
     .menu-toggle {

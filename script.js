@@ -158,7 +158,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const iconClock = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
     const iconPin = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>';
 
-    function openFormModal(activity, time, place) {
+    function setLinkLabel(text) {
+        // Conserva el ícono SVG dentro del enlace; solo cambia el texto.
+        const first = formModalLink.firstChild;
+        if (first && first.nodeType === Node.TEXT_NODE) {
+            first.textContent = text;
+        } else {
+            formModalLink.insertBefore(document.createTextNode(text), formModalLink.firstChild);
+        }
+    }
+
+    function openFormModal(activity, time, place, directForm) {
         if (!formModal) return;
 
         formModalTitle.textContent = activity;
@@ -168,16 +178,24 @@ document.addEventListener('DOMContentLoaded', () => {
         if (place) metaHtml += `<span>${iconPin} ${place}</span>`;
         formModalMeta.innerHTML = metaHtml;
 
-        if (FORM_URL) {
-            const url = FORM_URL.replace('__ACTIVIDAD__', encodeURIComponent(activity));
+        // Prioridad: formulario específico de la actividad (data-form) >
+        // formulario genérico con prellenado (FORM_URL).
+        let url = '';
+        if (directForm) {
+            url = directForm;
+        } else if (FORM_URL) {
+            url = FORM_URL.replace('__ACTIVIDAD__', encodeURIComponent(activity));
+        }
+
+        if (url) {
             formModalLink.href = url;
-            formModalLink.textContent = 'Abrir formulario de inscripción';
+            setLinkLabel('Ir al formulario ');
             formModalLink.removeAttribute('aria-disabled');
             formModalLink.style.pointerEvents = '';
             formModalLink.style.opacity = '';
         } else {
             formModalLink.href = '#';
-            formModalLink.textContent = 'Formulario próximamente';
+            setLinkLabel('Formulario próximamente ');
             formModalLink.setAttribute('aria-disabled', 'true');
             formModalLink.style.pointerEvents = 'none';
             formModalLink.style.opacity = '0.65';
@@ -205,7 +223,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const activity = row.dataset.activity || row.querySelector('.event-name')?.textContent.trim() || 'Actividad';
             const time = row.dataset.time || '';
             const place = row.dataset.place || '';
-            openFormModal(activity, time, place);
+            const directForm = row.dataset.form || '';
+            openFormModal(activity, time, place, directForm);
         });
     });
 
