@@ -7,3 +7,6 @@ cloudflared.exe
 Thumbs.db
 .DS_Store
 desktop.ini
+
+# Claude Code (skills locales del proyecto)
+.claude/skills/

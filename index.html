@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa Delfín - Universidad Libre Barranquilla</title>
+    <title>Programa Delfín 2026 — Universidad Libre Seccional Barranquilla</title>
+    <meta name="description" content="Programa Delfín 2026 en la Universidad Libre Seccional Barranquilla. Estancia de investigación de 7 semanas que integra ciencia, academia y cultura caribeña.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="navbar">
+    <header class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#inicio" class="logo">
                 <img src="logo-unilibre.png" alt="Universidad Libre Colombia" class="logo-img">
@@ -20,10 +23,11 @@
             </a>
             <nav class="nav-menu" id="navMenu">
                 <a href="#inicio" class="nav-link active">Inicio</a>
-                <a href="#programa" class="nav-link">Programa</a>
+                <a href="#programa" class="nav-link">El Programa</a>
+                <a href="#facultades" class="nav-link">Facultades</a>
                 <a href="#itinerario" class="nav-link">Itinerario</a>
-                <a href="#lugares" class="nav-link">Lugares</a>
-                <a href="#actividades" class="nav-link">Actividades</a>
+                <a href="#congreso" class="nav-link">Congreso</a>
+                <a href="#lugares" class="nav-link">Cultura</a>
             </nav>
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
                 <span></span>
@@ -36,29 +40,33 @@
     <section class="hero" id="inicio">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <span class="hero-tag">Programa Delfín 2026</span>
-            <h1 class="hero-title">Bienvenidos a <span class="highlight">Barranquilla</span></h1>
-            <p class="hero-subtitle">Una experiencia única de intercambio académico y cultural en la Puerta de Oro de Colombia</p>
+            <span class="hero-tag">Convocatoria 2026 · XXXI Verano de la Investigación Científica</span>
+            <h1 class="hero-title">Investigar. <span class="highlight">Compartir.</span> Habitar el Caribe.</h1>
+            <p class="hero-subtitle">Una estancia de investigación de siete semanas en la Universidad Libre Seccional Barranquilla, donde la ciencia, la academia y la cultura caribeña se encuentran para formar la próxima generación de investigadores latinoamericanos.</p>
             <div class="hero-buttons">
-                <a href="#itinerario" class="btn btn-primary">Ver Itinerario</a>
-                <a href="#lugares" class="btn btn-secondary">Explorar Lugares</a>
+                <a href="#programa" class="btn btn-primary">Conocer el programa</a>
+                <a href="#itinerario" class="btn btn-secondary">Ver itinerario</a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number">30</span>
-                    <span class="stat-label">Días de estancia</span>
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Semanas de estancia</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Actividades</span>
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Facultades anfitrionas</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">10+</span>
-                    <span class="stat-label">Lugares por visitar</span>
+                    <span class="stat-number">1995</span>
+                    <span class="stat-label">Año de fundación</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">9</span>
+                    <span class="stat-label">Países participantes</span>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-indicator" aria-hidden="true">
             <span></span>
         </div>
     </section>
@@ -67,30 +75,141 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Sobre el programa</span>
-                <h2 class="section-title">Intercambio Académico y Cultural</h2>
+                <h2 class="section-title">Más que un intercambio: una <em>estancia de investigación</em></h2>
                 <div class="divider"></div>
+                <p class="section-description">El Programa Delfín no es un viaje turístico. Es una experiencia académica formal que conecta a estudiantes de México, Colombia y América Latina con investigadores de instituciones afiliadas para desarrollar proyectos reales de ciencia, tecnología e innovación.</p>
             </div>
+
             <div class="programa-grid">
                 <div class="programa-text">
-                    <p class="lead">El <strong>Programa Delfín</strong> es una iniciativa que fortalece la cooperación académica entre instituciones de educación superior de México y Colombia, promoviendo la movilidad estudiantil y el intercambio cultural.</p>
-                    <p>Durante un mes, los estudiantes provenientes de diferentes universidades de México y del interior de Colombia tendrán la oportunidad de vivir una experiencia integral en Barranquilla, conociendo nuestra cultura caribeña, nuestra gastronomía, y sumergiéndose en la riqueza académica de la Universidad Libre.</p>
+                    <p class="lead">Desde 1995, el <strong>Programa Delfín</strong> fortalece la cultura de colaboración científica entre instituciones de educación superior y centros de investigación. Hoy reúne <strong>332 instituciones</strong> de <strong>9 países</strong>, articulando movilidad académica y divulgación de la ciencia.</p>
+                    <p>Durante el <strong>XXXI Verano de la Investigación Científica</strong>, los estudiantes seleccionados realizan una estancia de siete semanas (<strong>8 de junio al 24 de julio de 2026</strong>) acompañados por investigadores reconocidos. La Universidad Libre Seccional Barranquilla recibe esta cohorte con una agenda que integra trabajo de laboratorio, seminarios, visitas técnicas y una programación cultural propia de la Puerta de Oro del Caribe colombiano.</p>
                     <ul class="programa-list">
-                        <li><span class="check">✓</span> Recibimiento institucional</li>
-                        <li><span class="check">✓</span> Acompañamiento académico personalizado</li>
-                        <li><span class="check">✓</span> Visitas guiadas a lugares emblemáticos</li>
-                        <li><span class="check">✓</span> Actividades culturales y recreativas</li>
-                        <li><span class="check">✓</span> Inmersión en la cultura barranquillera</li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                            Estancia formal con asesor científico designado
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                            Acceso a laboratorios, semilleros y grupos de investigación
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                            Participación obligatoria en el Congreso Internacional Delfín
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                            Seminarios, talleres y visitas técnicas especializadas
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                            Inmersión cultural en Barranquilla y el Caribe colombiano
+                        </li>
                     </ul>
                 </div>
-                <div class="programa-card">
-                    <div class="card-icon">🎓</div>
-                    <h3>Misión del Programa</h3>
-                    <p>Brindar a los estudiantes visitantes una experiencia académica y cultural enriquecedora, fortaleciendo lazos entre universidades hermanas y promoviendo la integración latinoamericana.</p>
-                    <div class="card-footer">
-                        <span class="card-label">Duración</span>
-                        <span class="card-value">1 mes</span>
+                <aside class="programa-card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
-                </div>
+                    <h3>Misión del programa</h3>
+                    <p>Fortalecer la cultura de colaboración entre instituciones de educación superior y centros de investigación para impulsar la formación de investigadores y la integración latinoamericana.</p>
+                    <div class="card-stats">
+                        <div>
+                            <span class="card-label">Duración</span>
+                            <span class="card-value">7 semanas</span>
+                        </div>
+                        <div>
+                            <span class="card-label">Modalidad</span>
+                            <span class="card-value">Presencial</span>
+                        </div>
+                        <div>
+                            <span class="card-label">Inicio</span>
+                            <span class="card-value">8 Jun 2026</span>
+                        </div>
+                        <div>
+                            <span class="card-label">Cierre</span>
+                            <span class="card-value">24 Jul 2026</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="objetivos-grid">
+                <article class="objetivo">
+                    <div class="objetivo-num">01</div>
+                    <h4>Formar investigadores</h4>
+                    <p>Vincular estudiantes de pregrado y maestría con proyectos reales bajo dirección de investigadores reconocidos.</p>
+                </article>
+                <article class="objetivo">
+                    <div class="objetivo-num">02</div>
+                    <h4>Tejer redes</h4>
+                    <p>Ampliar las redes académicas regionales y abrir caminos hacia posgrados nacionales e internacionales.</p>
+                </article>
+                <article class="objetivo">
+                    <div class="objetivo-num">03</div>
+                    <h4>Divulgar ciencia</h4>
+                    <p>Comunicar los resultados de la estancia en el Congreso Internacional Delfín, presencial y virtual.</p>
+                </article>
+                <article class="objetivo">
+                    <div class="objetivo-num">04</div>
+                    <h4>Integrar la región</h4>
+                    <p>Fortalecer la integración latinoamericana mediante movilidad académica y diálogo intercultural.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="facultades" id="facultades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Por facultad</span>
+                <h2 class="section-title">Tres rutas académicas en la Universidad Libre</h2>
+                <div class="divider"></div>
+                <p class="section-description">Cada estudiante se vincula a una facultad anfitriona según su línea de investigación. Estas son las experiencias diferenciadas que se ofrecen en la cohorte 2026.</p>
+            </div>
+
+            <div class="facultades-grid">
+                <article class="facultad-card">
+                    <div class="facultad-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+                    </div>
+                    <span class="facultad-tag">Ciencias de la Salud</span>
+                    <h3>Salud</h3>
+                    <p>Práctica clínica simulada y exploración del Hospital Simulado. Trabajo con grupos de investigación en salud pública, enfermería e instrumentación quirúrgica.</p>
+                    <ul class="facultad-list">
+                        <li>Visita al Hospital Simulado</li>
+                        <li>Programa "Mi Red" en territorio</li>
+                        <li>Sede Principal</li>
+                    </ul>
+                </article>
+
+                <article class="facultad-card">
+                    <div class="facultad-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+                    </div>
+                    <span class="facultad-tag">CEAC · Ingeniería</span>
+                    <h3>Ingeniería e IA</h3>
+                    <p>Inmersión en el Laboratorio de Inteligencia Artificial y proyectos del Centro de Estudios Avanzados (CEAC). Investigación aplicada en sistemas inteligentes y ciencia de datos.</p>
+                    <ul class="facultad-list">
+                        <li>Laboratorio de Inteligencia Artificial</li>
+                        <li>Proyectos CEAC</li>
+                        <li>Sede Centro</li>
+                    </ul>
+                </article>
+
+                <article class="facultad-card">
+                    <div class="facultad-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z"/></svg>
+                    </div>
+                    <span class="facultad-tag">Derecho</span>
+                    <h3>Derecho</h3>
+                    <p>Visita al segundo piso de la Sede Centro y a los consultorios jurídicos. Diálogo con grupos de investigación en derecho público, constitucional y derechos humanos.</p>
+                    <ul class="facultad-list">
+                        <li>Consultorios jurídicos</li>
+                        <li>Grupos de investigación</li>
+                        <li>Sede Centro</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
@@ -98,74 +217,132 @@
     <section class="itinerario" id="itinerario">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Cronograma</span>
-                <h2 class="section-title">Itinerario General</h2>
+                <span class="section-tag">Cronograma 2026</span>
+                <h2 class="section-title">Siete semanas, una experiencia integral</h2>
                 <div class="divider"></div>
-                <p class="section-description">Un recorrido de cuatro semanas lleno de aprendizaje, cultura y experiencias inolvidables</p>
+                <p class="section-description">Del 8 de junio al 24 de julio de 2026. Estas son las actividades institucionales programadas; en paralelo, cada estudiante avanza en su proyecto con el investigador asignado.</p>
             </div>
+
+            <p class="timeline-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                Haz clic en cualquier actividad para inscribirte.
+            </p>
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <span>1</span>
-                    </div>
+                    <div class="timeline-marker"><span>1</span></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Semana 1 · Por confirmar</span>
-                        <h3>Bienvenida e Inducción</h3>
-                        <p>Recibimiento oficial en la Universidad Libre, presentación del equipo, recorrido por el campus y actividades de integración con estudiantes locales.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Inducción</span>
-                            <span class="tag">Bienvenida</span>
-                            <span class="tag">Campus</span>
+                        <span class="timeline-date">Semana 1 · 10 – 17 jun</span>
+                        <h3>Apertura y bienvenida institucional</h3>
+                        <p>Inicio formal de la cohorte con seminario taller, ceremonia de bienvenida y recorrido turístico introductorio por Barranquilla.</p>
+                        <div class="timeline-events">
+                            <button type="button" class="event-row" data-activity="Seminario taller — 10 jun" data-place="Sede Principal" data-time="9:00 – 16:00"><span class="event-date">10 jun</span><span class="event-name">Seminario taller</span><span class="event-time">9:00 – 16:00</span><span class="event-place">Sede Principal</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
+                            <button type="button" class="event-row" data-activity="Seminario taller — 11 jun" data-place="Sede Principal" data-time="9:00 – 16:00"><span class="event-date">11 jun</span><span class="event-name">Seminario taller</span><span class="event-time">9:00 – 16:00</span><span class="event-place">Sede Principal</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
+                            <button type="button" class="event-row" data-activity="Bienvenida oficial" data-place="Sede Principal" data-time="8:00 – 11:30"><span class="event-date">12 jun</span><span class="event-name">Bienvenida oficial</span><span class="event-time">8:00 – 11:30</span><span class="event-place">Sede Principal</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
+                            <button type="button" class="event-row" data-activity="Recorrido turístico" data-place="Sede Principal" data-time="8:00 – 17:00"><span class="event-date">17 jun</span><span class="event-name">Recorrido turístico</span><span class="event-time">8:00 – 17:00</span><span class="event-place">Sede Principal</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
                         </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <span>2</span>
-                    </div>
+                    <div class="timeline-marker"><span>2</span></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Semana 2 · Por confirmar</span>
-                        <h3>Inmersión Académica y Cultural</h3>
-                        <p>Participación en talleres, conferencias y actividades académicas. Visita a sitios históricos y museos representativos de la ciudad.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Académico</span>
-                            <span class="tag">Cultura</span>
-                            <span class="tag">Historia</span>
+                        <span class="timeline-date">Semana 2 · 18 jun</span>
+                        <h3>Inmersión por facultad</h3>
+                        <p>Jornada simultánea de visitas especializadas. Cada estudiante asiste a la actividad de su facultad anfitriona.</p>
+                        <div class="timeline-events">
+                            <button type="button" class="event-row event-highlight" data-activity="Visita Hospital Simulado (Salud)" data-place="Sede Principal" data-time="9:30 – 11:30"><span class="event-date">18 jun</span><span class="event-name">Visita Hospital Simulado <em>(Salud)</em></span><span class="event-time">9:30 – 11:30</span><span class="event-place">Sede Principal</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
+                            <button type="button" class="event-row event-highlight" data-activity="Visita Laboratorio de IA (CEAC, Ingeniería)" data-place="Sede Centro" data-time=""><span class="event-date">18 jun</span><span class="event-name">Laboratorio de IA <em>(CEAC, Ingeniería)</em></span><span class="event-time">—</span><span class="event-place">Sede Centro</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
+                            <button type="button" class="event-row event-highlight" data-activity="Visita 2.º piso (Derecho)" data-place="Sede Centro" data-time=""><span class="event-date">18 jun</span><span class="event-name">Visita 2.º piso <em>(Derecho)</em></span><span class="event-time">—</span><span class="event-place">Sede Centro</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
                         </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <span>3</span>
-                    </div>
+                    <div class="timeline-marker"><span>3</span></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Semana 3 · Por confirmar</span>
-                        <h3>Turismo y Experiencias Costeñas</h3>
-                        <p>Salidas a playas cercanas, recorridos gastronómicos, conocimiento del Carnaval y experiencias propias de la cultura caribeña.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Turismo</span>
-                            <span class="tag">Gastronomía</span>
-                            <span class="tag">Playa</span>
+                        <span class="timeline-date">Semana 3 · 25 jun</span>
+                        <h3>Arte, danza y patrimonio</h3>
+                        <p>Encuentro con la cultura barranquillera a través del cuerpo y las artes plásticas: clase de baile típico costeño y taller de artes plásticas.</p>
+                        <div class="timeline-events">
+                            <button type="button" class="event-row" data-activity="Clase de baile · Taller de artes plásticas" data-place="Sede Principal" data-time=""><span class="event-date">25 jun</span><span class="event-name">Clase de baile · Taller de artes plásticas</span><span class="event-time">—</span><span class="event-place">Sede Principal</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
                         </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <span>4</span>
-                    </div>
+                    <div class="timeline-marker"><span>4</span></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Semana 4 · Por confirmar</span>
-                        <h3>Cierre y Despedida</h3>
-                        <p>Presentación de proyectos, evaluación del programa, ceremonia de clausura y entrega de certificaciones. Despedida institucional.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Clausura</span>
-                            <span class="tag">Certificación</span>
-                            <span class="tag">Despedida</span>
+                        <span class="timeline-date">Semana 4 · 3 jul</span>
+                        <h3>Integración deportiva</h3>
+                        <p>Tarde deportiva para fortalecer la convivencia entre la cohorte Delfín y los estudiantes locales de la Universidad Libre.</p>
+                        <div class="timeline-events">
+                            <button type="button" class="event-row" data-activity="Tarde deportiva" data-place="Sede Principal" data-time=""><span class="event-date">3 jul</span><span class="event-name">Tarde deportiva</span><span class="event-time">—</span><span class="event-place">Sede Principal</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
                         </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-item-rest">
+                    <div class="timeline-marker"><span>5</span></div>
+                    <div class="timeline-content timeline-content-rest">
+                        <span class="timeline-date">Semana 5</span>
+                        <h3>Semana sin actividades institucionales</h3>
+                        <p>Esta semana se reserva para el trabajo autónomo con el investigador asignado. No hay agenda institucional programada.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"><span>6</span></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Semana 6</span>
+                        <h3>Mi Red · trabajo en territorio</h3>
+                        <p>Salida del programa "Mi Red" dirigida a la facultad de Salud, con llegada independiente al punto de encuentro.</p>
+                        <div class="timeline-events">
+                            <button type="button" class="event-row" data-activity="Mi Red (Salud)" data-place="Llegada independiente" data-time=""><span class="event-date">Sem 6</span><span class="event-name">Mi Red <em>(Salud)</em></span><span class="event-time">—</span><span class="event-place">Llegada independiente</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"><span>7</span></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Semana 7 · 23 jul</span>
+                        <h3>Cierre y despedida</h3>
+                        <p>Acto institucional de cierre, socialización de resultados y entrega de constancias. Despedida formal de la cohorte 2026.</p>
+                        <div class="timeline-events">
+                            <button type="button" class="event-row" data-activity="Actividad de despedida" data-place="Sede Principal" data-time=""><span class="event-date">23 jul</span><span class="event-name">Actividad de despedida</span><span class="event-time">—</span><span class="event-place">Sede Principal</span><span class="event-cta" aria-hidden="true">Inscribirse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="congreso" id="congreso">
+        <div class="container">
+            <div class="congreso-grid">
+                <div class="congreso-text">
+                    <span class="section-tag light">Tras la estancia</span>
+                    <h2 class="section-title light">Congreso Internacional Delfín</h2>
+                    <div class="divider divider-light"></div>
+                    <p>La estancia culmina en la divulgación pública de los resultados. La participación en el Congreso Internacional Delfín es <strong>obligatoria</strong> para todo estudiante que haya cursado el Verano de la Investigación.</p>
+                    <div class="congreso-dates">
+                        <div class="congreso-date">
+                            <span class="date-label">Modalidad presencial</span>
+                            <span class="date-value">26 – 29 agosto 2026</span>
+                        </div>
+                        <div class="congreso-date">
+                            <span class="date-label">Modalidad virtual</span>
+                            <span class="date-value">23 – 25 septiembre 2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="congreso-visual" aria-hidden="true">
+                    <div class="congreso-card">
+                        <span class="congreso-num">XXXI</span>
+                        <span class="congreso-label">Verano de la Investigación Científica</span>
+                        <div class="congreso-line"></div>
+                        <span class="congreso-year">2026</span>
                     </div>
                 </div>
             </div>
@@ -175,10 +352,10 @@
     <section class="lugares" id="lugares">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Descubre</span>
-                <h2 class="section-title">Lugares Turísticos</h2>
+                <span class="section-tag">Vivir el Caribe</span>
+                <h2 class="section-title">Barranquilla más allá del aula</h2>
                 <div class="divider"></div>
-                <p class="section-description">Barranquilla y sus alrededores ofrecen una diversidad de destinos por explorar</p>
+                <p class="section-description">La estancia académica se complementa con una experiencia cultural en la Puerta de Oro del Caribe colombiano. Estos son algunos de los lugares que la cohorte 2026 visitará.</p>
             </div>
 
             <div class="lugares-grid">
@@ -188,8 +365,8 @@
                     </div>
                     <div class="lugar-content">
                         <h3>Gran Malecón del Río</h3>
-                        <p>Uno de los espacios públicos más emblemáticos, con vista al río Magdalena y zonas gastronómicas.</p>
-                        <span class="lugar-link">Barranquilla →</span>
+                        <p>Espacio público emblemático sobre el río Magdalena, eje gastronómico y de paisaje urbano.</p>
+                        <span class="lugar-link">Barranquilla</span>
                     </div>
                 </article>
 
@@ -199,19 +376,19 @@
                     </div>
                     <div class="lugar-content">
                         <h3>Museo del Caribe</h3>
-                        <p>Recorrido interactivo por la historia, naturaleza y cultura de la región Caribe colombiana.</p>
-                        <span class="lugar-link">Barranquilla →</span>
+                        <p>Recorrido interactivo por la historia, la naturaleza y la cultura del Caribe colombiano.</p>
+                        <span class="lugar-link">Barranquilla</span>
                     </div>
                 </article>
 
                 <article class="lugar-card">
                     <div class="lugar-image lugar-3">
-                        <span class="lugar-badge">Carnaval</span>
+                        <span class="lugar-badge">Patrimonio</span>
                     </div>
                     <div class="lugar-content">
                         <h3>Casa del Carnaval</h3>
-                        <p>Conoce la historia del Carnaval de Barranquilla, Patrimonio Cultural Inmaterial de la Humanidad.</p>
-                        <span class="lugar-link">Barranquilla →</span>
+                        <p>Sede del Carnaval de Barranquilla, Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO.</p>
+                        <span class="lugar-link">Barranquilla</span>
                     </div>
                 </article>
 
@@ -220,20 +397,20 @@
                         <span class="lugar-badge">Naturaleza</span>
                     </div>
                     <div class="lugar-content">
-                        <h3>Playas de Puerto Velero</h3>
-                        <p>Hermosa playa de aguas tranquilas, ideal para deportes acuáticos y relajación frente al mar Caribe.</p>
-                        <span class="lugar-link">Tubará →</span>
+                        <h3>Puerto Velero</h3>
+                        <p>Playa de aguas tranquilas en Tubará, ideal para deportes náuticos y jornadas de integración.</p>
+                        <span class="lugar-link">Tubará, Atlántico</span>
                     </div>
                 </article>
 
                 <article class="lugar-card">
                     <div class="lugar-image lugar-5">
-                        <span class="lugar-badge">Histórico</span>
+                        <span class="lugar-badge">Colonial</span>
                     </div>
                     <div class="lugar-content">
                         <h3>Ciudad Amurallada</h3>
-                        <p>Excursión opcional a Cartagena, ciudad colonial declarada Patrimonio de la Humanidad por la UNESCO.</p>
-                        <span class="lugar-link">Cartagena →</span>
+                        <p>Excursión opcional a Cartagena, ciudad colonial Patrimonio de la Humanidad por la UNESCO.</p>
+                        <span class="lugar-link">Cartagena</span>
                     </div>
                 </article>
 
@@ -242,64 +419,11 @@
                         <span class="lugar-badge">Gastronomía</span>
                     </div>
                     <div class="lugar-content">
-                        <h3>Mercado de Sabores</h3>
-                        <p>Recorrido gastronómico para degustar la auténtica comida costeña: arepa de huevo, butifarra, sancocho.</p>
-                        <span class="lugar-link">Barranquilla →</span>
+                        <h3>Sabores costeños</h3>
+                        <p>Recorrido por la cocina del Caribe: arepa de huevo, butifarra soledeña, sancocho de guandú.</p>
+                        <span class="lugar-link">Barranquilla</span>
                     </div>
                 </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="actividades" id="actividades">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Experiencias</span>
-                <h2 class="section-title">Actividades Programadas</h2>
-                <div class="divider"></div>
-            </div>
-
-            <div class="actividades-grid">
-                <div class="actividad">
-                    <div class="actividad-icon">🎭</div>
-                    <h3>Talleres Culturales</h3>
-                    <p>Cumbia, mapalé y otras danzas típicas del Caribe colombiano.</p>
-                </div>
-                <div class="actividad">
-                    <div class="actividad-icon">🍽️</div>
-                    <h3>Rutas Gastronómicas</h3>
-                    <p>Degustaciones de platos típicos en restaurantes seleccionados.</p>
-                </div>
-                <div class="actividad">
-                    <div class="actividad-icon">🎓</div>
-                    <h3>Charlas Académicas</h3>
-                    <p>Conferencias con docentes investigadores de la Universidad Libre.</p>
-                </div>
-                <div class="actividad">
-                    <div class="actividad-icon">🏛️</div>
-                    <h3>Visitas a Museos</h3>
-                    <p>Recorridos guiados por los principales museos de la ciudad.</p>
-                </div>
-                <div class="actividad">
-                    <div class="actividad-icon">🌊</div>
-                    <h3>Salidas a Playa</h3>
-                    <p>Días de integración en las mejores playas del Atlántico.</p>
-                </div>
-                <div class="actividad">
-                    <div class="actividad-icon">🎶</div>
-                    <h3>Noches de Música</h3>
-                    <p>Eventos musicales con artistas locales y géneros tradicionales.</p>
-                </div>
-                <div class="actividad">
-                    <div class="actividad-icon">🤝</div>
-                    <h3>Encuentros Sociales</h3>
-                    <p>Espacios de integración con la comunidad estudiantil local.</p>
-                </div>
-                <div class="actividad">
-                    <div class="actividad-icon">📸</div>
-                    <h3>Recorridos Urbanos</h3>
-                    <p>Tours fotográficos por los puntos más representativos.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -307,7 +431,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
+                <div class="footer-col footer-brand">
                     <div class="logo logo-light">
                         <img src="logo-unilibre.png" alt="Universidad Libre Colombia" class="logo-img">
                         <div class="logo-text">
@@ -315,24 +439,42 @@
                             <span class="logo-subtitle">Seccional Barranquilla</span>
                         </div>
                     </div>
-                    <p>Programa Delfín — Intercambio académico y cultural para el desarrollo regional.</p>
+                    <p>Programa Delfín · XXXI Verano de la Investigación Científica. Una iniciativa de cooperación académica entre instituciones de educación superior de América Latina.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Enlaces rápidos</h4>
+                    <h4>Navegación</h4>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#programa">Programa</a></li>
+                        <li><a href="#programa">El Programa</a></li>
+                        <li><a href="#facultades">Facultades</a></li>
                         <li><a href="#itinerario">Itinerario</a></li>
-                        <li><a href="#lugares">Lugares</a></li>
+                        <li><a href="#congreso">Congreso</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Síguenos</h4>
+                    <h4>Enlaces oficiales</h4>
+                    <ul>
+                        <li><a href="https://www.unilibre.edu.co/" target="_blank" rel="noopener">Universidad Libre</a></li>
+                        <li><a href="https://programadelfin.org.mx/" target="_blank" rel="noopener">Programa Delfín México</a></li>
+                        <li><a href="https://www.unilibre.edu.co/noticias/te-apasiona-la-investigacion-la-universidad-libre-abre-convocatoria-delfin-2026/" target="_blank" rel="noopener">Convocatoria 2026</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto ORI</h4>
+                    <p class="footer-contact">Oficina de Relaciones Internacionales<br>Universidad Libre Seccional Barranquilla</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook">f</a>
-                        <a href="#" aria-label="Instagram">ig</a>
-                        <a href="#" aria-label="Twitter">tw</a>
-                        <a href="#" aria-label="YouTube">yt</a>
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.32 0h4.37v1.92h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v7.44h-4.56v-6.6c0-1.57-.03-3.6-2.19-3.6-2.2 0-2.53 1.72-2.53 3.5V22H7.54V8z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.2 0 12 0 12s0 3.8.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-2 .5-5.8.5-5.8s0-3.8-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -341,6 +483,23 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal de inscripción a actividades -->
+    <div class="form-modal" id="formModal" role="dialog" aria-modal="true" aria-labelledby="formModalTitle" hidden>
+        <div class="form-modal-card">
+            <button type="button" class="form-modal-close" id="formModalClose" aria-label="Cerrar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <span class="form-modal-tag">Inscripción a actividad</span>
+            <h3 class="form-modal-title" id="formModalTitle">Actividad</h3>
+            <div class="form-modal-meta" id="formModalMeta"></div>
+            <p class="form-modal-body">Para confirmar tu asistencia, completa el formulario. Solo te tomará un minuto y nos permite organizar mejor la jornada.</p>
+            <div class="form-modal-actions">
+                <a href="#" class="btn btn-primary" id="formModalLink" target="_blank" rel="noopener">Abrir formulario de inscripción</a>
+                <button type="button" class="btn-ghost" id="formModalCancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
