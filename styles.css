@@ -296,11 +296,10 @@ em {
 
 .hero-logo {
     display: block;
-    height: 56px;
+    height: 80px;
     width: auto;
-    margin: 0 auto 28px;
-    filter: brightness(0) invert(1);
-    opacity: 0.90;
+    margin: 0 auto 32px;
+    filter: drop-shadow(0 2px 12px rgba(0,0,0,0.5));
 }
 
 .hero-tag {
