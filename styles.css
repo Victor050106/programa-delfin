@@ -179,20 +179,6 @@ em {
     text-transform: uppercase;
 }
 
-.logo-divider {
-    width: 1px;
-    height: 36px;
-    background: rgba(0,0,0,0.15);
-    margin: 0 4px;
-}
-
-.logo-delfin {
-    height: 38px;
-    width: auto;
-    object-fit: contain;
-    border-radius: 4px;
-}
-
 .nav-menu {
     display: flex;
     gap: 4px;
@@ -308,6 +294,13 @@ em {
     animation: fadeUp 1.1s ease;
 }
 
+.hero-logo {
+    display: block;
+    height: 80px;
+    width: auto;
+    margin: 0 auto 32px;
+    filter: drop-shadow(0 2px 12px rgba(0,0,0,0.5));
+}
 
 .hero-tag {
     display: inline-block;
