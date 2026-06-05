@@ -1126,6 +1126,27 @@ section {
     transform: translateX(0);
 }
 
+/* Filas informativas sin inscripción (Bienvenida, Despedida) */
+.event-row.event-static {
+    cursor: default;
+}
+
+.event-row.event-static:hover {
+    background: transparent;
+    border-color: transparent;
+    transform: none;
+}
+
+.event-note {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: right;
+    font-style: italic;
+}
+
 /* Semana sin actividades */
 .timeline-content-rest {
     background: transparent;
