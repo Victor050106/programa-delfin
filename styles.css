@@ -1605,6 +1605,21 @@ section {
     align-items: flex-start;
     justify-content: flex-end;
     padding: 18px;
+    overflow: hidden;
+}
+
+.lugar-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lugar-card:hover .lugar-photo {
+    transform: scale(1.06);
 }
 
 .lugar-1 { background: linear-gradient(135deg, #C8102E, #5E0612); }
@@ -1618,6 +1633,7 @@ section {
 .lugar-9 { background: linear-gradient(135deg, #2e8b57, #0f3a2a); }
 .lugar-10 { background: linear-gradient(135deg, #6b8e23, #2f4010); }
 .lugar-11 { background: linear-gradient(135deg, #c87f1f, #5e3a06); }
+.lugar-ventana { background: linear-gradient(135deg, #C8102E 0%, #C8961F 45%, #14a0a8 100%); }
 
 /* Grupos dentro de la sección de lugares */
 .lugares-group {
@@ -1662,6 +1678,7 @@ section {
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.45));
+    z-index: 1;
 }
 
 .lugar-badge {
@@ -1673,7 +1690,7 @@ section {
     border-radius: 50px;
     text-transform: uppercase;
     letter-spacing: 0.14em;
-    z-index: 1;
+    z-index: 2;
     box-shadow: var(--shadow-xs);
 }
 
