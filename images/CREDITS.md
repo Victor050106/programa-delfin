@@ -21,3 +21,7 @@ Cada imagen conserva la licencia indicada; se atribuye a su autor y se enlaza la
   - Fuente: https://commons.wikimedia.org/wiki/File:Minca_santamarta_paisajes_restaurante_vegetacion_fauna_010.JPG
 - **taganga.jpg** — “Santa Marta, Taganga - panoramio.jpg” · CC BY-SA 3.0 · Alonso Cárdenas
   - Fuente: https://commons.wikimedia.org/wiki/File:Santa_Marta%2C_Taganga_-_panoramio.jpg
+- **ventana.jpg** — “La ventana al mundo.jpg” · CC BY-SA 4.0 · Araad1992
+  - Fuente: https://commons.wikimedia.org/wiki/File:La_ventana_al_mundo.jpg
+- **sabores.jpg** — “Arepas de huevo.jpg” · CC BY 3.0 · Jdvillalobos
+  - Fuente: https://commons.wikimedia.org/wiki/File:Arepas_de_huevo.jpg
