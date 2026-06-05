@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300);
     }
 
-    document.querySelectorAll('.event-row').forEach(row => {
+    document.querySelectorAll('.event-row:not(.event-static)').forEach(row => {
         row.addEventListener('click', () => {
             const activity = row.dataset.activity || row.querySelector('.event-name')?.textContent.trim() || 'Actividad';
             const time = row.dataset.time || '';
